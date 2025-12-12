@@ -1,211 +1,527 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light-theme">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MK Nexus - Global Digital Solutions</title>
+    <meta name="description" content="MK Nexus provides global digital solutions with advanced browser-based tools, front-end web solutions, and data services.">
+    <meta name="keywords" content="digital solutions, web development, media services, marketing, global business">
+    <meta name="author" content="MK Nexus">
+    <meta property="og:title" content="MK Nexus - Global Digital Solutions">
+    <meta property="og:description" content="Connecting businesses worldwide with advanced digital solutions.">
+    <meta property="og:image" content="Logo Nexus.png">
+    <meta property="og:url" content="https://mknexus.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MK Nexus - Global Digital Solutions">
+    <meta name="twitter:description" content="Connecting businesses worldwide with advanced digital solutions.">
+    <meta name="twitter:image" content="Logo Nexus.png">
+    <link rel="icon" type="image/x-icon" href="Logo Nexus.png">
     <link rel="stylesheet" href="styles.css">
+    <title>MK Nexus - Global Digital Solutions & Business Growth</title>
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" aria-hidden="true">
+        <div class="loader" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Skip to Main Content Link -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span class="sr-only">Scroll progress</span>
+    </div>
+
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <a href="#">
-                        <!-- replace logo.png with final logo image -->
-                        <img src="Logo Nexus.png" alt="MK Nexus Logo">
+                    <a href="#" aria-label="MK Nexus Home">
+                        <img src="Logo Nexus.png" alt="MK Nexus Logo" width="120" height="40" loading="eager">
                     </a>
                 </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#global">Global Reach</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                <nav class="nav" aria-label="Main Navigation">
+                    <ul class="nav-list" role="menubar">
+                        <li role="none">
+                            <a href="#services" class="nav-link" role="menuitem" tabindex="0">Services</a>
+                        </li>
+                        <li role="none">
+                            <a href="#about" class="nav-link" role="menuitem" tabindex="0">About</a>
+                        </li>
+                        <li role="none">
+                            <a href="#global" class="nav-link" role="menuitem" tabindex="0">Global Reach</a>
+                        </li>
+                        <li role="none">
+                            <a href="#contact" class="nav-link" role="menuitem" tabindex="0">Contact</a>
+                        </li>
                     </ul>
                 </nav>
-                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">We work with staff and clients from various parts of the world.</h1>
-                <p class="hero-subtitle">MK Nexus is growing globally, connecting with clients across the US, UK, Canada, and Europe.</p>
-                <div class="hero-actions">
-                    <a href="#services" class="btn btn-primary">Our Services</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <!-- replace hero.png with final hero image -->
-                <img src="hero.jpg" alt="Global team collaboration" class="hero-image">
-            </div>
-        </div>
-    </section>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" tabindex="0">
+        <span class="back-to-top-icon" aria-hidden="true">↑</span>
+    </button>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <!-- replace icon-1.png with final icon image -->
-                        <img src="Digital Solutions.png" alt="Digital Solutions Icon">
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">We work with staff and clients from various parts of the world.</h1>
+                    <p class="hero-subtitle">MK Nexus is growing globally, connecting with clients across the US, UK, Canada, and Europe with cutting-edge digital solutions.</p>
+                    <div class="hero-actions">
+                        <a href="#services" class="btn btn-primary" tabindex="0">
+                            <span class="btn-text">Our Services</span>
+                            <span class="btn-icon" aria-hidden="true">→</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" tabindex="0">
+                            <span class="btn-text">Contact Us</span>
+                            <span class="btn-icon" aria-hidden="true">✉</span>
+                        </a>
                     </div>
-                    <h3>Digital Solutions</h3>
-                    <div class="service-percentage">36%</div>
-                    <p>Advanced browser-based tools and front-end web solutions.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <!-- replace icon-2.png with final icon image -->
-                        <img src="Media Services.png" alt="Media Services Icon">
-                    </div>
-                    <h3>Media Services</h3>
-                    <div class="service-percentage">30%</div>
-                    <p>Comprehensive media solutions for modern businesses.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <!-- replace feature-1.png with final icon image -->
-                        <img src="Marketing.png" alt="Marketing Services Icon">
-                    </div>
-                    <h3>Marketing</h3>
-                    <div class="service-percentage">20%</div>
-                    <p>Strategic marketing to grow your business reach.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <!-- replace feature-2.png with final icon image -->
-                        <img src="Other Services.png" alt="Other Services Icon">
-                    </div>
-                    <h3>Other Services</h3>
-                    <div class="service-percentage">14%</div>
-                    <p>Additional specialized services tailored to your needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About MK Nexus</h2>
-                    <p>By delivering advanced browser-based tools, front-end web solutions, and data services, we help businesses streamline operations, improve efficiency, and achieve long-term goals while maintaining the same standard of quality and reliability in every project.</p>
-                    <div class="about-stats">
+                    <div class="hero-stats" aria-label="Company Statistics">
                         <div class="stat">
-                            <div class="stat-value">+8%</div>
-                            <div class="stat-label">Growth in Australia</div>
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Global Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="36">0</span>
+                            <span class="stat-label">Digital Solutions</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="8">0</span>
+                            <span class="stat-label">Growth %</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <!-- replace feature-3.png with final about image -->
-                    <img src="MK Nexus team collaboration.png" alt="MK Nexus team collaboration">
+                <div class="hero-visual">
+                    <div class="image-container">
+                        <img src="hero.jpg" alt="Global team collaboration in modern office" class="hero-image" width="600" height="400" loading="lazy">
+                        <div class="image-overlay" aria-hidden="true"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Global Reach Section -->
-    <section id="global" class="global">
-        <div class="container">
-            <h2 class="section-title">Global Reach</h2>
-            <div class="global-content">
-                <div class="global-map">
-                    <!-- replace bg-section.png with final map image -->
-                    <img src="MK Nexus global presence map.png" alt="MK Nexus global presence map">
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="services-title" class="section-title">Our Digital Solutions</h2>
+                    <p class="section-subtitle">Comprehensive services tailored to drive your business growth</p>
                 </div>
-                <div class="global-text">
-                    <p>MK Nexus is growing globally, connecting with clients across the US, UK, Canada, and Europe.</p>
-                    <ul class="global-list">
-                        <li>United States</li>
-                        <li>United Kingdom</li>
-                        <li>Canada</li>
-                        <li>Europe</li>
-                        <li>Australia</li>
-                    </ul>
+                <div class="services-grid" role="list">
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true">
+                            <img src="Digital Solutions.png" alt="" width="64" height="64" loading="lazy">
+                        </div>
+                        <h3 class="service-title">Digital Solutions</h3>
+                        <div class="service-progress">
+                            <div class="progress-bar" style="width: 36%" aria-label="36% of services">
+                                <span class="progress-percentage">36%</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Advanced browser-based tools and front-end web solutions that transform your digital presence.</p>
+                        <ul class="service-features" aria-label="Digital Solutions Features">
+                            <li>Custom Web Applications</li>
+                            <li>Progressive Web Apps</li>
+                            <li>UI/UX Design</li>
+                            <li>API Integration</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true">
+                            <img src="Media Services.png" alt="" width="64" height="64" loading="lazy">
+                        </div>
+                        <h3 class="service-title">Media Services</h3>
+                        <div class="service-progress">
+                            <div class="progress-bar" style="width: 30%" aria-label="30% of services">
+                                <span class="progress-percentage">30%</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Comprehensive media solutions for modern businesses looking to amplify their brand presence.</p>
+                        <ul class="service-features" aria-label="Media Services Features">
+                            <li>Video Production</li>
+                            <li>Audio Engineering</li>
+                            <li>Content Creation</li>
+                            <li>Media Strategy</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true">
+                            <img src="Marketing.png" alt="" width="64" height="64" loading="lazy">
+                        </div>
+                        <h3 class="service-title">Marketing</h3>
+                        <div class="service-progress">
+                            <div class="progress-bar" style="width: 20%" aria-label="20% of services">
+                                <span class="progress-percentage">20%</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Strategic marketing solutions designed to grow your business reach and customer engagement.</p>
+                        <ul class="service-features" aria-label="Marketing Features">
+                            <li>Digital Marketing</li>
+                            <li>SEO Optimization</li>
+                            <li>Social Media Management</li>
+                            <li>Analytics & Reporting</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true">
+                            <img src="Other Services.png" alt="" width="64" height="64" loading="lazy">
+                        </div>
+                        <h3 class="service-title">Other Services</h3>
+                        <div class="service-progress">
+                            <div class="progress-bar" style="width: 14%" aria-label="14% of services">
+                                <span class="progress-percentage">14%</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Additional specialized services tailored to meet your unique business requirements.</p>
+                        <ul class="service-features" aria-label="Other Services Features">
+                            <li>Consulting</li>
+                            <li>Training</li>
+                            <li>Support & Maintenance</li>
+                            <li>Custom Integrations</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p>Ready to streamline your operations and achieve your business goals? Contact us today.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <span class="contact-label">Email:</span>
-                            <span>info@mknexus.com</span>
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="section-header">
+                            <h2 id="about-title" class="section-title">About MK Nexus</h2>
+                            <p class="section-subtitle">Pioneering digital transformation since 2015</p>
                         </div>
-                        <div class="contact-item">
-                            <span class="contact-label">WhatsApp:</span>
-                            <span>+92 (313) 123-4567</span>
+                        <p class="about-description">We deliver advanced browser-based tools, front-end web solutions, and data services that help businesses streamline operations, improve efficiency, and achieve long-term goals while maintaining the highest standard of quality and reliability in every project.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature">
+                                <span class="feature-icon" aria-hidden="true">✓</span>
+                                <span class="feature-text">Quality Assurance</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon" aria-hidden="true">✓</span>
+                                <span class="feature-text">Timely Delivery</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon" aria-hidden="true">✓</span>
+                                <span class="feature-text">24/7 Support</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon" aria-hidden="true">✓</span>
+                                <span class="feature-text">Custom Solutions</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <div class="stat-value" data-count="8">0</div>
+                                <div class="stat-label">Growth in Australia</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" data-count="5">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" data-count="100">0</div>
+                                <div class="stat-label">Projects Delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="image-container">
+                            <img src="MK Nexus team collaboration.png" alt="MK Nexus team collaborating in modern workspace" class="about-image" width="500" height="350" loading="lazy">
+                            <div class="image-badge" aria-label="Team Excellence Award">
+                                <span class="badge-text">Team Excellence</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Global Reach Section -->
+        <section id="global" class="global" aria-labelledby="global-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="global-title" class="section-title">Global Reach</h2>
+                    <p class="section-subtitle">Connecting businesses across continents</p>
+                </div>
+                <div class="global-content">
+                    <div class="global-map">
+                        <div class="map-container">
+                            <img src="MK Nexus global presence map.png" alt="World map showing MK Nexus global presence" class="map-image" width="600" height="400" loading="lazy">
+                            <div class="map-markers">
+                                <div class="marker marker-usa" aria-label="United States Office">
+                                    <div class="marker-dot"></div>
+                                    <div class="marker-label">USA</div>
+                                </div>
+                                <div class="marker marker-uk" aria-label="United Kingdom Office">
+                                    <div class="marker-dot"></div>
+                                    <div class="marker-label">UK</div>
+                                </div>
+                                <div class="marker marker-canada" aria-label="Canada Office">
+                                    <div class="marker-dot"></div>
+                                    <div class="marker-label">CAN</div>
+                                </div>
+                                <div class="marker marker-europe" aria-label="European Office">
+                                    <div class="marker-dot"></div>
+                                    <div class="marker-label">EU</div>
+                                </div>
+                                <div class="marker marker-australia" aria-label="Australia Office">
+                                    <div class="marker-dot"></div>
+                                    <div class="marker-label">AUS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="global-text">
+                        <p class="global-description">MK Nexus is expanding globally, establishing strong connections with clients and partners across the US, UK, Canada, Europe, and Australia.</p>
+                        
+                        <ul class="global-list" role="list">
+                            <li class="global-list-item">
+                                <span class="country-name">United States</span>
+                                <span class="country-detail">Headquarters & Innovation Hub</span>
+                            </li>
+                            <li class="global-list-item">
+                                <span class="country-name">United Kingdom</span>
+                                <span class="country-detail">European Operations Center</span>
+                            </li>
+                            <li class="global-list-item">
+                                <span class="country-name">Canada</span>
+                                <span class="country-detail">North American Expansion</span>
+                            </li>
+                            <li class="global-list-item">
+                                <span class="country-name">Europe</span>
+                                <span class="country-detail">Strategic Partnerships</span>
+                            </li>
+                            <li class="global-list-item">
+                                <span class="country-name">Australia</span>
+                                <span class="country-detail">Asia-Pacific Gateway</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="global-stats">
+                            <div class="global-stat">
+                                <span class="global-stat-number">5</span>
+                                <span class="global-stat-label">Continents</span>
+                            </div>
+                            <div class="global-stat">
+                                <span class="global-stat-number">20+</span>
+                                <span class="global-stat-label">Countries</span>
+                            </div>
+                            <div class="global-stat">
+                                <span class="global-stat-number">50+</span>
+                                <span class="global-stat-label">Cities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss how we can transform your business</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Contact Information</h3>
+                        <p class="contact-info-description">Ready to streamline your operations and achieve your business goals? Contact us today for a free consultation.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item" itemscope itemtype="https://schema.org/Organization">
+                                <div class="contact-icon" aria-hidden="true">✉</div>
+                                <div class="contact-content">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:info@mknexus.com" class="contact-value" itemprop="email">info@mknexus.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">📱</div>
+                                <div class="contact-content">
+                                    <span class="contact-label">WhatsApp</span>
+                                    <a href="https://wa.me/923131234567" class="contact-value" target="_blank" rel="noopener noreferrer">+92 (313) 123-4567</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">📍</div>
+                                <div class="contact-content">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Global Headquarters</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <p class="social-title">Follow Us</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <span class="social-icon" aria-hidden="true">in</span>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <span class="social-icon" aria-hidden="true">𝕏</span>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Facebook">
+                                    <span class="social-icon" aria-hidden="true">f</span>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <span class="social-icon" aria-hidden="true">ig</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" aria-labelledby="contact-title">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required 
+                                   placeholder="Enter your full name"
+                                   aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required 
+                                   placeholder="Enter your email address"
+                                   aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" name="subject" class="form-select">
+                                <option value="">Select a subject</option>
+                                <option value="digital-solutions">Digital Solutions</option>
+                                <option value="media-services">Media Services</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="other">Other Services</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" required 
+                                      placeholder="Tell us about your project or inquiry"
+                                      rows="5"
+                                      aria-required="true"></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox-input">
+                            <label for="newsletter" class="form-checkbox-label">
+                                Subscribe to our newsletter for updates and insights
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon" aria-hidden="true">→</span>
+                        </button>
+                        
+                        <p class="form-note">We'll get back to you within 24 hours.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <!-- replace logo.png with final logo image -->
-                    <img src="Logo Nexus.png" alt="MK Nexus Logo">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo" aria-label="MK Nexus Home">
+                        <img src="Logo Nexus.png" alt="MK Nexus Logo" width="120" height="40" loading="lazy">
+                    </a>
+                    <p class="footer-tagline">Connecting businesses worldwide with innovative digital solutions.</p>
                 </div>
+                
                 <div class="footer-links">
-                    <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#global">Global Reach</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="#services" class="footer-link">Digital Solutions</a></li>
+                            <li><a href="#services" class="footer-link">Media Services</a></li>
+                            <li><a href="#services" class="footer-link">Marketing</a></li>
+                            <li><a href="#services" class="footer-link">Other Services</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="#about" class="footer-link">About Us</a></li>
+                            <li><a href="#global" class="footer-link">Global Reach</a></li>
+                            <li><a href="#contact" class="footer-link">Contact</a></li>
+                            <li><a href="#" class="footer-link">Careers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Resources</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                            <li><a href="#" class="footer-link">Case Studies</a></li>
+                            <li><a href="#" class="footer-link">Documentation</a></li>
+                            <li><a href="#" class="footer-link">Support</a></li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <div class="footer-newsletter">
+                    <h4 class="footer-column-title">Stay Updated</h4>
+                    <p class="newsletter-text">Subscribe to our newsletter for the latest updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-secondary" aria-label="Subscribe to newsletter">
+                            <span class="btn-text">Subscribe</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
                 <div class="footer-copyright">
                     <p>&copy; 2025 MK Nexus. All rights reserved.</p>
+                </div>
+                
+                <div class="footer-legal">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Cookie Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Screen Reader Only Helper Class -->
+    <span class="sr-only" aria-live="polite" aria-atomic="true"></span>
+
     <script src="app.js"></script>
 </body>
-
 </html>
-
-
